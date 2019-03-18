@@ -1,4 +1,4 @@
-font-awesome-webpack
+@devpodio/font-awesome-webpack
 ====================
 
 Font awesome configuration and loading package for webpack, using font-awesome (Less).
@@ -32,7 +32,7 @@ The Regex for font types are adjusted to support these formats. Regex also suppo
 To use the complete font-awesome package including all styles with the default settings:
 
 ``` javascript
-require("font-awesome-webpack");
+require("@devpodio/font-awesome-webpack");
 ```
 
 The `require` statement should be present in your application code(Entry file or any other file required in entry file) and not in webpack.config.js.
@@ -47,7 +47,7 @@ You can configurate font-awesome-webpack with two configuration files:
 Add both files *next to each other* in your project. Then:
 
 ``` javascript
-require("font-awesome-webpack!./path/to/font-awesome.config.js");
+require("@devpodio/font-awesome-webpack!./path/to/font-awesome.config.js");
 ```
 
 Or simple add it as entry point to your `webpack.config.js`:
@@ -55,7 +55,7 @@ Or simple add it as entry point to your `webpack.config.js`:
 ``` javascript
 module.exports = {
   entry: [
-    "font-awesome-webpack!./path/to/font-awesome.config.js",
+    "@devpodio/font-awesome-webpack!./path/to/font-awesome.config.js",
     "your-existing-entry-point"
   ]
 };
